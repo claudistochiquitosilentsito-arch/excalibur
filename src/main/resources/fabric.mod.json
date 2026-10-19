@@ -1,0 +1,33 @@
+{
+	"schemaVersion": 1,
+	"id": "excalibur",
+	"version": "${version}",
+	"name": "Excalibur",
+	"description": "La espada legendaria Excalibur, con animación de tajo en primera y tercera persona. Cada golpe hace temblar la cámara del objetivo.",
+	"authors": [
+		"Tú"
+	],
+	"license": "CC0-1.0",
+	"icon": "assets/excalibur/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.excalibur.ExcaliburMod"
+		],
+		"client": [
+			"com.excalibur.client.ExcaliburClient"
+		]
+	},
+	"mixins": [
+		{
+			"config": "excalibur.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.19.5",
+		"minecraft": "~26.3",
+		"java": ">=25",
+		"fabric-api": "*"
+	}
+}
